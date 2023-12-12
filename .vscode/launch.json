@@ -11,7 +11,11 @@
       "webRoot": "${workspaceFolder}",
       "preLaunchTask": "ng-serve",
       "postDebugTask": "terminate",
-      "url": "http://localhost:4200"
+      "url": "http://localhost:4200",
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
     }
   ]
 }
